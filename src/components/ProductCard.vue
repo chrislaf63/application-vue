@@ -2,6 +2,7 @@
   <div class="product-card">
     <img :src="props.image" alt="product.name" />
     <h3><slot name="title"></slot></h3>
+    <p><slot name="categorie"></slot></p>
     <p><slot name="description"></slot></p>
     <p><slot name="price"></slot></p>
     <button>Add to cart</button>
@@ -17,10 +18,10 @@ const props = defineProps({
 
 <style scoped>
 .product-card {
-  max-width: 200px;
+  width: 400px;
   border: 1px solid red;
   margin: 10px;
-  height: 350px;
+  height: 600px;
 }
 
 .product-card img {

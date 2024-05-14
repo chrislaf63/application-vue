@@ -43,7 +43,6 @@ const del = () => {
     Créé le: {{ user?.created_at}}
   </p>
   <div class="buttons">
-
     <button @click="del">Supprimer</button>
   </div>
   </div>

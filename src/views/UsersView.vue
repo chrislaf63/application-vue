@@ -39,20 +39,6 @@ onMounted(() => {
         console.log(err);
       });
 })
-// axios({
-//   method: "get",
-//   url: "http://localhost:8000/api/v1/user",
-// })
-//     .then((res) => {
-//       console.log(res.data);
-//       users = res.data;
-//       console.log(users)
-//       usersList.value = users[0];
-//       console.log(usersList.value);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
 
 </script>
 
