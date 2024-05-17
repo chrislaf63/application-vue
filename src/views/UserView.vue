@@ -19,7 +19,6 @@ const del = () => {
   axios.delete(`http://localhost:8000/api/v1/user/${route.params.id}`)
       .then((res) => {
         console.log(res.data);
-
       })
       .catch((err) => {
         console.log(err);

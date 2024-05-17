@@ -5,6 +5,7 @@
     <p><slot name="categorie"></slot></p>
     <p><slot name="description"></slot></p>
     <p><slot name="price"></slot></p>
+    <p><slot name="stock"></slot></p>
     <button>Add to cart</button>
   </div>
 </template>

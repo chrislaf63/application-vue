@@ -1,24 +1,24 @@
 <template>
   <div>
-    <h1>Products</h1>
+    <h1>Produits</h1>
     <nav>
       <RouterLink to="/create-product">
-        <button>Ajouter un utilisateur</button>
+        <button>Ajouter un produit</button>
       </RouterLink>
       <RouterLink to="/dashboard">
         <button>Retour à l'accueil</button>
       </RouterLink>
     </nav>
     <div class="products">
-      <div v-for="product in productList" :key="product.id">
+      <RouterLink v-for="product in productList" :key="product.id" :to="`/product/${product.id}`">
         <ProductCard :image="getImageUrl(product.image)">
           <template #title>{{ product.name }}</template>
           <template #categorie>Categorie: <span v-for ="cat of product.categories">{{cat.categorie}} - </span></template>
           <template #description>Description: <br>{{ product.description }}</template>
           <template #price>Prix: {{ product.price }} €</template>
-          <template #created>{{ product.created_at }}</template>
+          <template #stock>Stock: {{ product.stock }}</template>
         </ProductCard>
-      </div>
+      </RouterLink>
     </div>
   </div>
 </template>

@@ -18,6 +18,8 @@ import router from "@/router/index.js";
   onMounted(() => {
     if (!localStorage.getItem("token")) {
       router.push("/login");
+    } else {
+      router.push("/dashboard");
     }
   });
 
